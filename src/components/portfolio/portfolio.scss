@@ -5,11 +5,10 @@
   .progress {
     position: sticky;
     top: 0;
-    padding-top: 50px;
     text-align: center;
     color: orange;
     font-size: 36px;
-    z-index: 99;
+    z-index: 999;
     background-color: #0c0c1d;
 
     .progressBar {

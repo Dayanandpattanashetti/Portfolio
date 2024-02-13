@@ -22,7 +22,7 @@ const items = [
     id: 2,
     title: "Versa Blog Cebtral",
     img: "blog.png",
-    desc: "Developed a feature-rich blogging application using the MERN stack, integrating React for frontend UI/UX, Express and Node for backend REST API, and MongoDB for data storage. Implemented JWT authentication for enhanced security, enabling secure user authentication and authorization, along with functionalities like user registration, login and CRUD operations.",
+    desc: "Developed a feature-rich blogging application using the MERN stack, integrating React for frontend UI/UX, Express and Node for backend REST API, and MongoDB for data storage. Implemented JWT authentication for enhanced security, enabling secure user authentication and authorization, along with functionalities like user registration, login, and CRUD operations.",
     url: "https://versablogcentral.onrender.com/",
   },
   {
@@ -36,7 +36,7 @@ const items = [
     id: 4,
     title: "Dukaan-Challenge",
     img: "dukaan.png",
-    desc: "Participated in Dukaan's frontend engineering hiring challenge, tasked with coding a Figma design into a pixel-perfect React application. Successfully completed and submitted the assignment, showcasing my proficiency in React and tailwind CSS.",
+    desc: "Participated in Dukaan's frontend engineering hiring challenge, tasked with coding a Figma design into a pixel-perfect React application. Successfully completed and submitted the assignment, showcasing my proficiency in React and Tailwind CSS.",
     url: "https://dayanandpattanashetti.github.io/dukaan/",
   },
   {
@@ -50,12 +50,12 @@ const items = [
     id: 6,
     title: "React Calculator",
     img: "calculator.png",
-    desc: "NOT YOUR REGULAR CALCULATOR, implemnted custom arithmetic logic, avoiding the use of external math libraries. A reducer-based state management system to handle user input, arithmetic operations, and dynamic operand formatting.",
+    desc: "NOT YOUR REGULAR CALCULATOR, implemented custom arithmetic logic, avoiding the use of external math libraries. A reducer-based state management system to handle user input, arithmetic operations, and dynamic operand formatting.",
     url: "https://dayanandpattanashetti.github.io/React-Calculator/",
   },
   {
     id: 7,
-    title: "Ecommerce - Homepage Design",
+    title: "E-Commerce - Homepage Design",
     img: "kommanari.png",
     desc: "A fully responsive frontend design of E-commerce Website, built using HTML and CSS",
     url: "https://dayanandpattanashetti.github.io/Ecommercewebsite/",
@@ -76,12 +76,15 @@ const Portfolio = () => {
   });
 
   return (
-    <div className="portfolio grid justify-center" ref={ref}>
-      <div className="progress mb-20 md:mb-10">
+    <div className="portfolio" ref={ref}>
+      <div className="progress w-full py-4 px-6 rounded-t-lg text-center text-orange text-3xl font-bold">
         <h1>Featured Projects</h1>
-        <motion.div style={{ scaleX }} className="progressBar"></motion.div>
+        <motion.div
+          style={{ scaleX }}
+          className="progressBar h-2 mt-4 bg-white rounded-full"
+        ></motion.div>
       </div>
-      <div className="grid justify-center gap-20 md:w-[1366px] md:gap-10">
+      <div className="grid justify-center gap-20 md:w-[1366px] md:gap-10 mx-auto px-6 py-8">
         {items.map((item) => (
           <PortfolioCard props={item} />
         ))}

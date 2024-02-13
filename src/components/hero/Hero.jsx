@@ -39,8 +39,8 @@ const sliderVariants = {
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="wrapper">
+    <div className="hero ">
+      <div className="wrapper ">
         <motion.div
           className="textContainer"
           variants={textVariants}
@@ -49,29 +49,46 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Dayanand Pattanshetti</motion.h2>
           <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+          <motion.div variants={textVariants} className="buttons flex gap-5">
+            <a
+              href="https://docs.google.com/document/d/1GIdqqdgHeW-EES8RD3WjAEjHuk331vFpmnvFCcwnqaE/edit?usp=sharing"
+              download
+              target="_blank"
+            >
+              <motion.button
+                variants={textVariants}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "4px",
+                }}
+                className="py-3 px-4 font-normal md:p-4 md:font-medium"
+              >
+                <span>
+                  <img src="view.png" className="h-5 inline -mt-1" alt="" />
+                </span>{" "}
+                <span>Resume/CV</span>
+              </motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button
+                className="py-3 px-4 font-normal md:p-4 md:font-medium"
+                variants={textVariants}
+              >
+                Contact Me
+              </motion.button>
+            </a>
           </motion.div>
           <motion.img
             variants={textVariants}
             animate="scrollButton"
             src="/scroll.png"
             alt=""
+            className="h-12 w-12"
           />
         </motion.div>
       </div>
-      <motion.div
-        className="slidingTextContainer"
-        variants={sliderVariants}
-        initial="initial"
-        animate="animate"
-      >
-        Passionate Full Stack Developer
-      </motion.div>
-      <div className="imageContainer">
+      <div className="imageContainer ">
         <img src="/hero.png" alt="" />
       </div>
     </div>
@@ -79,3 +96,14 @@ const Hero = () => {
 };
 
 export default Hero;
+
+{
+  /* <motion.div
+        className="slidingTextContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        Passionate Full Stack Developer
+      </motion.div> */
+}

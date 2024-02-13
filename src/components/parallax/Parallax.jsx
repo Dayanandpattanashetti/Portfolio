@@ -45,16 +45,15 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.h1 style={{ y: yText }} className="font-extrabold">
-        {type === "services" ? "My Skills" : "My Portfolio"}
+      <motion.h1 style={{ y: yText }} className="font-bold">
+        {type === "services" ? "Skills" : "Portfolio"}
       </motion.h1>
       <motion.img
         variants={textVariants}
-        // style={{ y: yText }}
         animate="scrollButton"
         src="/scroll.png"
         alt=""
-        className="size-20 mt-3"
+        className="h-12 w-12"
       />
       <motion.div className="mountains"></motion.div>
       <motion.div

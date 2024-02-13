@@ -52,7 +52,7 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Let’s Connect</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
           <span>dayanandweb@gmail.com</span>
@@ -62,11 +62,11 @@ const Contact = () => {
           <span>Bangalore, Karnataka</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2>Phone/Whatsapp</h2>
           <span>+91-9483035651</span>
         </motion.div>
       </motion.div>
-      <div className="formContainer">
+      <div className="formContainer flex justify-center">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}

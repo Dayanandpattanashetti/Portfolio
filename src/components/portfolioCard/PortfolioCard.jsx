@@ -2,8 +2,8 @@ import React from "react";
 
 const PortfolioCard = ({ props }) => {
   return (
-    <section className="w-auto h-auto">
-      <div className="relative flex w-[350px] flex-col rounded-xl bg-[#ffffff0f] bg-clip-border border shadow-md md:w-[1200px] md:grid md:grid-cols-2">
+    <section className="w-auto h-screen flex items-center justify-center">
+      <div className="relative min-w-min grid w-[350px] rounded-xl bg-[#ffffff0f] bg-clip-border border shadow-md md:w-[1200px] md:grid-cols-2 place-items-center">
         <div className="p-3 md:p-3">
           <img
             src={props.img}

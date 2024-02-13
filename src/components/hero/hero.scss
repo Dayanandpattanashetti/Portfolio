@@ -43,20 +43,12 @@
 
       .buttons {
         button {
-          padding: 20px;
           border: 1px solid white;
           border-radius: 10px;
           background-color: transparent;
           color: white;
-          margin-right: 20px;
           cursor: pointer;
-          font-weight: 300;
         }
-      }
-
-      img {
-        width: 50px;
-        height: auto;
       }
     }
   }
@@ -68,10 +60,12 @@
     right: 0;
 
     @include mobile {
-      height: 50%;
+      object-fit:cover;
+      object-position: top;
+      height: 70%;
       width: 100%;
       top: unset;
-      bottom: 0;
+      bottom: -25%;
     }
 
     img {

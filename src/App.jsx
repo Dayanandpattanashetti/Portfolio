@@ -6,16 +6,15 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 import Navbar from "./components/navbar/Navbar";
-import PortfolioCard from "./components/portfolioCard/PortfolioCard";
 const App = () => {
   return (
     <div>
       {/* <Cursor /> */}
-      <section id="Home Page">
+      <section id="Home">
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      <section id="Skills">
         <Parallax type="services" />
       </section>
       <section className="h-auto md:h-screen">
